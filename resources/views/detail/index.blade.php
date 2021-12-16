@@ -11,7 +11,6 @@
                     <th>ID Detail</th>
                     <th>ID Pemesanan</th>
                     <th>Menu</th>
-                    
                     <th>QTY</th>
                     <th>Jumlah Halaman</th>
                     <th>Desain</th>
