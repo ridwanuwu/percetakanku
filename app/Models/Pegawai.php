@@ -13,8 +13,8 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Pegawai
  * 
- * @property int $ID_PEGAWAI
- * @property int $ID_JABATAN
+ * @property string $ID_PEGAWAI
+ * @property string $ID_JABATAN
  * @property string $NAMA_PEGAWAI
  * @property string $ALAMAT_PEGAWAI
  * @property Carbon $TGL_LAHIR_PEGAWAI
@@ -37,8 +37,6 @@ class Pegawai extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'ID_PEGAWAI' => 'int',
-		'ID_JABATAN' => 'int',
 		'STATUS_PEGAWAI' => 'bool'
 	];
 

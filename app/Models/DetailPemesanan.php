@@ -11,9 +11,9 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class DetailPemesanan
  * 
- * @property int $ID_PEMESANAN
+ * @property string $ID_PEMESANAN
  * @property int $ID_MENU
- * @property int $ID_DETAIL_PESAN
+ * @property string $ID_DETAIL_PESAN
  * @property int $QTY
  * @property int $JUMLAHHALAMAN
  * @property boolean $DESAIN
@@ -28,12 +28,10 @@ use Illuminate\Database\Eloquent\Model;
 class DetailPemesanan extends Model
 {
 	protected $table = 'detail_pemesanan';
-	public $incrementing = true;
+	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $casts = [
-		'ID_DETAIL_PESAN' => 'int',
-		'ID_PEMESANAN' => 'int',
 		'ID_MENU' => 'int',
 		'QTY' => 'int',
 		'JUMLAHHALAMAN' => 'int',
@@ -42,9 +40,9 @@ class DetailPemesanan extends Model
 	];
 
 	protected $fillable = [
-		'ID_DETAIL_PESAN',
-		'ID_PEMESANAN',
+		"ID_DETAIL_PESAN",
 		'ID_MENU',
+		'ID_PEMESANAN',
 		'QTY',
 		'JUMLAHHALAMAN',
 		'DESAIN',

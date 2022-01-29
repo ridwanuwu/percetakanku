@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </div>
-            <div class="page-title-actions">
+            {{-- <div class="page-title-actions">
                 <button type="button" data-toggle="tooltip" title="Example Tooltip"
                     data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
                     <i class="fa fa-star"></i>
@@ -64,7 +64,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="row">
@@ -72,11 +72,12 @@
             <div class="card mb-3 widget-content bg-midnight-bloom">
                 <div class="widget-content-wrapper text-white">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Total Orders</div>
-                        <div class="widget-subheading">Last year expenses</div>
+                        
+                        <div class="widget-heading">Pesanan </div>
+                        <div class="widget-subheading">Total Pemesanan</div>
                     </div>
                     <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><span>1896</span></div>
+                        <div class="widget-numbers text-white"><span>@yield('total')</span></div>
                     </div>
                 </div>
             </div>
@@ -85,11 +86,11 @@
             <div class="card mb-3 widget-content bg-arielle-smile">
                 <div class="widget-content-wrapper text-white">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Clients</div>
-                        <div class="widget-subheading">Total Clients Profit</div>
+                        <div class="widget-heading">Pelanggan</div>
+                        <div class="widget-subheading">Total Pelanggan</div>
                     </div>
                     <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><span>$ 568</span></div>
+                        <div class="widget-numbers text-white"><span>@yield('totalpelanggan')</span></div>
                     </div>
                 </div>
             </div>
@@ -98,11 +99,11 @@
             <div class="card mb-3 widget-content bg-grow-early">
                 <div class="widget-content-wrapper text-white">
                     <div class="widget-content-left">
-                        <div class="widget-heading">Followers</div>
-                        <div class="widget-subheading">People Interested</div>
+                        <div class="widget-heading">Selesai</div>
+                        <div class="widget-subheading">Pesanan Telah Selesai</div>
                     </div>
                     <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><span>46%</span></div>
+                        <div class="widget-numbers text-white"><span>@yield('selesai')</span></div>
                     </div>
                 </div>
             </div>

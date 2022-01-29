@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('content')
-<a href="{{ route('detail.create') }}" class="mb-2 mr-2 btn btn-primary">Tambah Data</a>
+
     
 <div class="main-card mb-3 card">
    <div class="card-body"><h5 class="card-title">Tabel Pemesanan</h5>
@@ -13,7 +13,7 @@
                     <th>Menu</th>
                     <th>QTY</th>
                     <th>Jumlah Halaman</th>
-                    <th>Desain</th>
+                    {{-- <th>Desain</th> --}}
                     <th>Harga Bayar</th>
                     <th>Keterangan</th>
                 </tr>
@@ -26,7 +26,7 @@
                         <td>{{ $detail->menu_layanan->NAMA_MENU }}</td>
                         <td>{{ $detail->QTY }}</td>
                         <td>{{ $detail->JUMLAHHALAMAN }}</td>
-                        <td><img width="150px" src="{{ $detail->DESAIN }}"/></td>
+                        {{-- <td><img width="150px" src="{{ $detail->DESAIN }}"/></td> --}}
                         <td>{{ $detail->HARGABAYAR }}</td>
                         <td>{{ $detail->KETERANGANDETAIL }}</td>
                     </tr>
@@ -35,4 +35,5 @@
         </table>
     </div>
 </div>
+<a href="{{ route('pesanUser.index') }}" class="mb-2 mr-2 btn btn-primary">Kembali</a>
 @endsection

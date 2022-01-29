@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Ukuran
  * 
- * @property int $ID_UKURAN
+ * @property string $ID_UKURAN
  * @property string $UKURAN
  * 
  * @property Collection|MenuLayanan[] $menu_layanans
@@ -25,10 +25,6 @@ class Ukuran extends Model
 	protected $primaryKey = 'ID_UKURAN';
 	public $incrementing = false;
 	public $timestamps = false;
-
-	protected $casts = [
-		'ID_UKURAN' => 'int'
-	];
 
 	protected $fillable = [
 		'UKURAN'

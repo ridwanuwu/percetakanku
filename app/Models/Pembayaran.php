@@ -12,9 +12,9 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Pembayaran
  * 
- * @property int $ID_PEMBAYARAN
- * @property int $ID_PEMESANAN
- * @property int $ID_PEGAWAI
+ * @property string $ID_PEMBAYARAN
+ * @property string $ID_PEMESANAN
+ * @property string $ID_PEGAWAI
  * @property Carbon $TANGGAL_PEMBAYARAN
  * @property bool $STATUS_BAYAR
  * @property boolean|null $BUKTI_BAYAR
@@ -33,9 +33,6 @@ class Pembayaran extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'ID_PEMBAYARAN' => 'int',
-		'ID_PEMESANAN' => 'int',
-		'ID_PEGAWAI' => 'int',
 		'STATUS_BAYAR' => 'bool',
 		'BUKTI_BAYAR' => 'boolean'
 	];
@@ -45,6 +42,7 @@ class Pembayaran extends Model
 	];
 
 	protected $fillable = [
+		'ID_PEMBAYARAN',
 		'ID_PEMESANAN',
 		'ID_PEGAWAI',
 		'TANGGAL_PEMBAYARAN',

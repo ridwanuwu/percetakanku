@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Jabatan
  * 
- * @property int $ID_JABATAN
+ * @property string $ID_JABATAN
  * @property string $NAMA_JABATAN
  * 
  * @property Collection|Pegawai[] $pegawais
@@ -25,10 +25,6 @@ class Jabatan extends Model
 	protected $primaryKey = 'ID_JABATAN';
 	public $incrementing = false;
 	public $timestamps = false;
-
-	protected $casts = [
-		'ID_JABATAN' => 'int'
-	];
 
 	protected $fillable = [
 		'NAMA_JABATAN'

@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Bahan
  * 
- * @property int $ID_BAHAN
+ * @property string $ID_BAHAN
  * @property string $NAMA_BAHAN
  * 
  * @property Collection|MenuLayanan[] $menu_layanans
@@ -25,10 +25,6 @@ class Bahan extends Model
 	protected $primaryKey = 'ID_BAHAN';
 	public $incrementing = false;
 	public $timestamps = false;
-
-	protected $casts = [
-		'ID_BAHAN' => 'int'
-	];
 
 	protected $fillable = [
 		'NAMA_BAHAN'

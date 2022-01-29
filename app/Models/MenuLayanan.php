@@ -13,9 +13,9 @@ use Illuminate\Database\Eloquent\Model;
  * Class MenuLayanan
  * 
  * @property int $ID_MENU
- * @property int $ID_UKURAN
- * @property int $ID_LAYANAN
- * @property int $ID_BAHAN
+ * @property string $ID_UKURAN
+ * @property string $ID_LAYANAN
+ * @property string $ID_BAHAN
  * @property string $NAMA_MENU
  * @property float $HARGA_MENU
  * 
@@ -35,9 +35,6 @@ class MenuLayanan extends Model
 
 	protected $casts = [
 		'ID_MENU' => 'int',
-		'ID_UKURAN' => 'int',
-		'ID_LAYANAN' => 'int',
-		'ID_BAHAN' => 'int',
 		'HARGA_MENU' => 'float'
 	];
 

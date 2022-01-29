@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Pelanggan
  * 
- * @property int $NO_PELANGGAN
+ * @property string $NO_PELANGGAN
  * @property int $ID_KELURAHAN
  * @property string $NAMA_PELANGGAN
  * @property string $ALAMAT_PELANGGAN
@@ -32,7 +32,6 @@ class Pelanggan extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'NO_PELANGGAN' => 'int',
 		'ID_KELURAHAN' => 'int'
 	];
 

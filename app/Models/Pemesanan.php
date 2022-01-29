@@ -13,9 +13,9 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Pemesanan
  * 
- * @property int $ID_PEMESANAN
- * @property int $ID_PEGAWAI
- * @property int $NO_PELANGGAN
+ * @property string $ID_PEMESANAN
+ * @property string $ID_PEGAWAI
+ * @property string $NO_PELANGGAN
  * @property string|null $ALAMAT_KIRIM
  * @property Carbon $TANGGAL_PEMESANAN
  * @property bool $METODE_PEMBAYARAN
@@ -39,9 +39,6 @@ class Pemesanan extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'ID_PEMESANAN' => 'int',
-		'ID_PEGAWAI' => 'int',
-		'NO_PELANGGAN' => 'int',
 		'METODE_PEMBAYARAN' => 'bool',
 		'DP_PEMESANAN' => 'float',
 		'TOTAL_PEMESANAN' => 'float',

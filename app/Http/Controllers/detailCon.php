@@ -6,6 +6,7 @@ use App\Models\DetailPemesanan;
 use App\Models\MenuLayanan;
 use App\Models\Pemesanan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class detailCon extends Controller
 {
@@ -48,8 +49,11 @@ class detailCon extends Controller
         ]);
         
         DetailPemesanan::create($request->all());
+        
+        return redirect()->route('pesanUser.index')->with('success','Data Berhasil di Input');
+        
 
-        return redirect()->route('pesan.index')->with('success','Data Berhasil di Input');
+        
     }
 
     /**

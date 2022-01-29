@@ -14,8 +14,8 @@ use Illuminate\Database\Eloquent\Model;
  * 
  * @property int $ID_PROVINSI
  * @property string $NAMA_PROVINSI
- * @property int|null $ID_LOKASI
- * @property int|null $STATUS
+ * @property string|null $ID_LOKASI
+ * @property string|null $STATUS
  * 
  * @property Collection|Kotum[] $kota
  *
@@ -29,9 +29,7 @@ class Provinsi extends Model
 	public $timestamps = false;
 
 	protected $casts = [
-		'ID_PROVINSI' => 'int',
-		'ID_LOKASI' => 'int',
-		'STATUS' => 'int'
+		'ID_PROVINSI' => 'int'
 	];
 
 	protected $fillable = [
